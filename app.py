@@ -5,6 +5,10 @@ import pickle
 import google.generativeai as genai
 from sentence_transformers import SentenceTransformer
 
+
+from fastapi import FastAPI
+app = FastAPI()  # Uvicorn is looking for this 'app' variable!
+
 # -----------------------------
 # PAGE CONFIG
 # -----------------------------
